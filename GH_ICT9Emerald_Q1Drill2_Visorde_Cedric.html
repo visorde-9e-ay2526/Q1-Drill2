@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q1 Drill 2</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		
+		body {
+			/*background-color: #CEB992;*/
+			background-image: url(https://cdn.wrytin.com/images/wrytup/r/1024/2fbarsiw7ol41-ka9ylxis.jpeg);
+			font-family: "Epunda Slab";
+			color: #FFFECE;
+		}
+
+		h1, hr {
+			text-align: center;
+			color: #FFFECE;
+		}
+
+		form {
+			margin: auto;
+			background-color: #73937E;
+			width: 30;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+			-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+		}
+
+	</style>
+
+</head>
+<body>
+	<form>
+		<h1>Movie Recommendation Form</h1>
+		<hr color="#CEB992">
+
+		<p>Recommend your favorite movies to us, and we'll be considering them for review.</p>
+
+		<fieldset>
+			<legend><h3>Your information</h3></legend>
+			<label for="fullname">Your Name</label>
+			<input type="text" placeholder="Name" name="fullname">
+			<br>
+			<label for="email">Your Email</label>
+			<input type="text" placeholder="Email" name="email">
+			<br>
+			<label for="age">Your Age</label>
+			<input type="text" placeholder="Age" name="age">
+			<br>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend><h3>What movie would you like to recommend?</h3></legend>
+			<label for="title">Movie Title</label>
+			<input type="text" placeholder="Movie Title" name="title">
+			<br>
+			<br>
+			<label for="reason">Why do you recommend it?</label><br>
+			<textarea cols="70" rows="5" placeholder="Why?"></textarea>
+			<br>
+			<br>
+			
+			<!--Movie Genre-->
+			<fieldset>
+				<legend>Movie Genre/s</legend>
+				<input type="checkbox" name="genre">
+				<label for="genre">Fantasy</label>
+				<br>
+				<input type="checkbox" name="genre">
+				<label for="genre">Action</label>
+				<br>
+				<input type="checkbox" name="genre">
+				<label for="genre">Drama</label>
+				<br>
+				<input type="checkbox" name="genre">
+				<label for="genre">Sci-Fi</label>
+				<br>
+				<input type="checkbox" name="genre">
+				<label for="genre">Drama</label>
+				<br>
+				<input type="checkbox" name="genre">
+				<label for="genre">Other</label>
+				<br>
+			</fieldset>
+
+			<!--Rating-->
+			<fieldset>
+				<legend>On a scale of 1-5, how would you rate the movie?</legend>
+				<input type="radio" name="rating">
+				<label for="rating">1</label>
+				<input type="radio" name="rating">
+				<label for="rating">2</label>
+				<input type="radio" name="rating">
+				<label for="rating">3</label>
+				<input type="radio" name="rating">
+				<label for="rating">4</label>
+				<input type="radio" name="rating">
+				<label for="rating">5</label>
+			</fieldset>
+			<br>
+
+			<label for="platform">Where did you watch it?</label>
+
+			<select id="platform">
+				<option value="platform">Netflix</option>
+				<option value="platform">HBO Max</option>
+				<option value="platform">Amazon Prime</option>
+				<option value="platform">Other</option>
+				<option value="platform">None (Movie Theater)</option>
+			</select>
+		</fieldset>
+		<br>
+
+		<input type="reset">
+		<input type="submit" name="submit button">
+
+	</form>
+</body>
+</html>
